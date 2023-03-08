@@ -1,0 +1,10 @@
+coverage
+node_modules
+dist
+run
+typings
+*.md
+*.html
+.prettierrc
+.eslintrc
+.gitlab-ci.yml

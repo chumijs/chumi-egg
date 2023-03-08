@@ -1,0 +1,43 @@
+{
+  "name": "chumi-egg",
+  "version": "1.0.0",
+  "private": true,
+  "egg": {
+    "typescript": true,
+    "declarations": true
+  },
+  "dependencies": {
+    "chumi": "^0.0.10",
+    "egg": "^2.37.0",
+    "egg-scripts": "2.17.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^5.1.0",
+    "egg-mock": "^4.2.1",
+    "eslint": "^8.17.0",
+    "eslint-config-egg": "^12.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start",
+    "stop": "egg-scripts stop",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "build": "ets && tsc",
+    "lint": "eslint . --no-error-on-unmatched-pattern --fix",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod",
+    "clean": "ets clean"
+  },
+  "ci": {
+    "version": "16"
+  },
+  "author": "topthinking",
+  "license": "MIT"
+}
